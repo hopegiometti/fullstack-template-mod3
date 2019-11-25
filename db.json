@@ -1,8 +1,116 @@
 {
-  "resources": [
+  "quotes": [
     {
       "id": 1,
-      "example": "resource"
+      "quote": "I don’t need anyone. Because I can do every single thing that a person in a relationship can. Everything. Even zip up my own dress. You know, there are some things that are actually harder to do with two people. Such as monologues.",
+      "category": "love",
+      "advice": "Don't base your self worth on others!",
+      "image": "https://media.giphy.com/media/l2JJA5fbJ5o328Odi/giphy.gif"
+    },
+    {
+      "id": 2,
+      "quote": "Who hasn't made mistakes? I once French-kissed a dog at a party to try to impress what turned out to be a very tall 12-year-old.",
+      "category": "life",
+      "advice": "Don't let mistakes hold you back! Nobody's perfect!",
+      "image": "https://media.giphy.com/media/JBuCCkNxDzoBO/giphy.gif"
+    },
+    {
+      "id": 3,
+      "quote": "Living a lie will eat you up inside. Like that parasite I got from eating sushi on Amtrak.",
+      "category": "life",
+      "advice": "Always be honest!",
+      "image": "https://media.giphy.com/media/VuWtVHkMjrz2w/giphy.gif"
+    },
+    {
+      "id": 4,
+      "quote": "When a child doesn’t see his father enough, he starts to jump up and down, then his mood level will drop until he pees himself.",
+      "category": "life",
+      "advice": "Be there for those you love!",
+      "image": "https://media.giphy.com/media/CwAPtUUWp91cc/giphy.gif"
+    },
+    {
+      "id": 5,
+      "quote": "Here’s a little bedroom tip. Put a bag of popcorn in the microwave beforehand. That way, when you’re done, you have a treat!",
+      "category": "love",
+      "advice": "In life and in love, it's always best to be prepared!",
+      "image": "https://media.giphy.com/media/l0NhX25NibM6LmrPW/giphy.gif"
+    },
+    {
+      "id": 6,
+      "quote": "Do you need sex advice? Here's a tip. Sometimes a lady likes to leave her blazer on.",
+      "category": "love",
+      "advice": "Some times it helps to spice things up!",
+      "image": "https://media.giphy.com/media/E75onQo4ivVio/giphy.gif"
+    },
+    {
+      "id": 7,
+      "quote": "All of humankind has one thing in common: the sandwich. I believe that all anyone really wants in this life is to sit in peace and eat a sandwich.",
+      "category": "life",
+      "advice": "Here is the real meaning of life:",
+      "image": "https://media.giphy.com/media/noqlVwG5MBL2g/giphy.gif"
+    },
+    {
+      "id": 8,
+      "quote": "That word bums me out unless it’s between the words meat and pizza.",
+      "category": "love",
+      "advice": "Don't use the word lovers.",
+      "image": "https://media.giphy.com/media/bkGXLpEXC6Tsc/giphy.gif"
+    },
+    {
+      "id": 9,
+      "quote": "If reality TV has taught us anything, it's that you can't keep people with no shame down.",
+      "category": "life",
+      "advice": "Never doubt yourself!",
+      "image": "https://media.giphy.com/media/14lYdwS7Bmx5mw/giphy.gif"
+    },
+    {
+      "id": 10,
+      "quote": "Rejection from society is what created the X-Men.",
+      "category": "life",
+      "advice": "Don't care about what others think of you!",
+      "image": "https://media.giphy.com/media/INN5osp2sW3sY/giphy.gif"
+    },
+    {
+      "id": 11,
+      "quote": "No, it OK. Don’t be cry.",
+      "category": "life",
+      "advice": "Be happy!",
+      "image": "https://media.giphy.com/media/8FNSVXzS8pfHy/giphy.gif"
+    },
+    {
+      "id": 12,
+      "quote": "If I could press a button and five people in the world would die, but I'd get free cable for life, I'd do it.",
+      "category": "life",
+      "advice": "Life is easier when you know who you are!",
+      "image": "https://media.giphy.com/media/CpAaBUwBpckFO/giphy.gif"
+    },
+    {
+      "id": 13,
+      "quote": "I want to roll my eyes right now, but the doctor says that, if I keep doing it, my ocular muscles might spasm and eject my eyeballs.",
+      "category": "life",
+      "advice": "Take care of your body!",
+      "image": "https://media.giphy.com/media/6Nv7BdrUl6Psc/giphy.gif"
+    },
+    {
+      "id": 14,
+      "quote": "You didn't realize emotion could be a weapon? Have you not read the poetry of Jewel?",
+      "category": "life",
+      "advice": "Know your strengths and how to use them!",
+      "image": "https://media.giphy.com/media/em91409tVRqxi/giphy.gif"
+    },
+    {
+      "id": 15,
+      "quote": "One of my New Year's resolutions is to say 'yes.' Yes to love, yes to life, yes to staying in more.",
+      "category": "life",
+      "advice": "Stick to your resolutions!",
+      "image": "https://media.giphy.com/media/XnD9mzuJJAOd2/giphy.gif"
+    },
+    {
+      "id": 16,
+      "quote": "You wanna party? It’s $500 for kissing and $10,000 for snuggling; end of list.",
+      "category": "life",
+      "advice": "Always know your worth!",
+      "image": "https://media.giphy.com/media/RYZDpsuCUP31e/giphy.gif"
     }
   ]
 }

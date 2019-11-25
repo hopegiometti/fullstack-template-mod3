@@ -1,0 +1,85 @@
+#filter-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gold;
+  
+  }
+  
+  #good-house-filter {
+    margin-top: 1vh;
+    width: 35vw;
+    font-size: 1em;
+    height: 5vh;
+    border-radius: 3em;
+  }
+  
+  #category-bar {
+    height: 15vh;
+    background: silver;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #category-bar span {
+    height: 80%;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    border: 3px solid black;
+    font-family: 'Avenir';
+    font-size: x-large ;
+    color: black;
+  }
+
+  #category-bar div {
+    height: 80%;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    border: 3px solid gold;
+    font-family: 'Avenir';
+    font-size: x-large ;
+    color: gold;
+  }
+  
+  #advice-container {
+    height: 75vh;
+    text-align: center;
+    font-family: 'Avenir';
+    color: black
+  }
+
+  #advice-container span{
+    height: 75vh;
+    text-align: center;
+    font-family: 'Avenir';
+    color: gold
+  }
+  
+  #liz-advice {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Avenir';
+  }
+
+  #liz-advice p {
+    font-family: 'Avenir';
+    font-size: 'large';
+    align-items: center;
+  }
+  
+  #liz-advice img {
+    max-width: 75vw;
+    max-height: 25vw;
+  }
+  
+  body {
+    margin: 0;
+  }
