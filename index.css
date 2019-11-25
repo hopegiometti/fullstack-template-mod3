@@ -67,11 +67,11 @@
     flex-flow: column;
     align-items: center;
     font-family: 'Avenir';
+    font-size: large;
   }
 
-  #liz-advice p {
+  #liz-advice div {
     font-family: 'Avenir';
-    font-size: 'large';
     align-items: center;
   }
   

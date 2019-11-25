@@ -19,6 +19,19 @@ let allAdviceDiv = document.createElement("div")
 let adviceP = document.createElement("p")
 let adviceImage = document.createElement("img")
 
+
+let newRating = document.createElement("form")
+let newRatingInput = document.createElement("input")
+let newRatingLabel = document.createElement("label")
+let newRatingSubmit = document.createElement("input")
+newRatingLabel.innerHTML = "Rate Advice: "
+newRatingInput.name = "rating"
+newRatingInput.type = "number"
+newRatingSubmit.type = "submit"
+newRatingSubmit.name = "Rate!"
+newRating.append(newRatingLabel, newRatingInput, newRatingSubmit)
+
+
 lifeCategory.addEventListener("click", (event) => {
     header.innerHTML = "Liz <span>Lemon</span> Says:"
     lizInfo.remove()
@@ -31,7 +44,16 @@ lifeCategory.addEventListener("click", (event) => {
         quotes.forEach((quote) => {
             if (quote.category === "life"){
                let adviceDiv = document.createElement("div")
+               let adviceSpan = document.createElement("span")
+               
+               let stars = quote.rating
+               
+               for (let i=0; i < stars; i++){
+                   adviceSpan.append("⭐")
+               }
+
                adviceDiv.innerText = quote.advice
+               adviceDiv.append(adviceSpan)
                allAdviceDiv.append(adviceDiv)
                lizAdviceArea.append(allAdviceDiv)
 
@@ -39,7 +61,39 @@ lifeCategory.addEventListener("click", (event) => {
                     allAdviceDiv.remove()
                     adviceP.innerText = quote.quote
                     adviceImage.src = quote.image
-                    lizAdviceArea.append(adviceP, adviceImage)  
+                    lizAdviceArea.append(newRating)
+
+                    newRating.addEventListener("submit", (event) => {
+                        event.preventDefault()
+                        let rating = event.target.rating.value
+                        quote.rating = rating
+
+                        fetch(`http://localhost:3000/quotes/${quote.id}`, {
+                            method: "PATCH",
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                rating: rating
+                            })
+                        })
+                        .then(r => r.json())
+                        .then((updatedQuote) => {
+                            let adviceSpan = document.createElement("span")
+                            let stars = quote.rating
+               
+                            for (let i=0; i < stars; i++){
+                                adviceSpan.append("⭐")
+                            }
+                            newRating.remove()
+                            adviceP.append(adviceSpan)
+
+                        })
+                        event.target.reset()
+                    })
+
+                    lizAdviceArea.prepend(adviceP, adviceImage)  
                })
             } 
         })
@@ -58,15 +112,56 @@ loveCategory.addEventListener("click", (event) => {
         quotes.forEach((quote) => {
             if (quote.category === "love"){
                let adviceDiv = document.createElement("div")
+               let adviceSpan = document.createElement("span")
+               
+               let stars = quote.rating
+               
+               for (let i=0; i < stars; i++){
+                   adviceSpan.append("⭐")
+               }
                adviceDiv.innerText = quote.advice
+               adviceDiv.append(adviceSpan)
                allAdviceDiv.append(adviceDiv)
                lizAdviceArea.append(allAdviceDiv)
 
                adviceDiv.addEventListener('click', (event) => {
+                    
                     allAdviceDiv.remove()
                     adviceP.innerText = quote.quote
                     adviceImage.src = quote.image
-                    lizAdviceArea.append(adviceP, adviceImage)  
+                    lizAdviceArea.append(newRating)
+
+                    newRating.addEventListener("submit", (event) => {
+                        event.preventDefault()
+                        let rating = event.target.rating.value
+                        quote.rating = rating
+
+                        fetch(`http://localhost:3000/quotes/${quote.id}`, {
+                            method: "PATCH",
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                rating: rating
+                            })
+                        })
+                        .then(r => r.json())
+                        .then((updatedQuote) => {
+                            let adviceSpan = document.createElement("span")
+                            let stars = quote.rating
+               
+                            for (let i=0; i < stars; i++){
+                                adviceSpan.append("⭐")
+                            }
+                            newRating.remove()
+                            adviceP.append(adviceSpan)
+
+                        })
+                        event.target.reset()
+                    })
+
+                    lizAdviceArea.prepend(adviceP, adviceImage)  
                })
             } 
         })
