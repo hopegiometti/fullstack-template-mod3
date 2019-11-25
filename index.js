@@ -33,6 +33,7 @@ newRating.append(newRatingLabel, newRatingInput, newRatingSubmit)
 
 
 lifeCategory.addEventListener("click", (event) => {
+    newRating.remove()
     header.innerHTML = "Liz <span>Lemon</span> Says:"
     lizInfo.remove()
     allAdviceDiv.innerHTML = ""
@@ -101,6 +102,7 @@ lifeCategory.addEventListener("click", (event) => {
 })
 
 loveCategory.addEventListener("click", (event) => {
+    newRating.remove()
     lizInfo.remove()
     header.innerHTML = "Liz <span>Lemon</span> Says:"
     allAdviceDiv.innerHTML = ""
@@ -171,6 +173,7 @@ loveCategory.addEventListener("click", (event) => {
 let jackImage = document.createElement("img")
 let lizP = document.createElement("p")
 homeCategory.addEventListener("click", (event) => {
+    newRating.remove()
     lizInfo.remove()
     jackImage.remove()
     allAdviceDiv.innerHTML = ""
